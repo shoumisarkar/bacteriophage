@@ -1,15 +1,14 @@
 #!/bin/sh
 #SBATCH --job-name=ungzip		# Job name
-#SBATCH --account=somnath.datta			# your own sponser or account
-#SBATCH --qos=somnath.datta-b                # your own sponser or account
+#SBATCH --account=group_name			# your own sponser or account
+#SBATCH --qos=group_name                # your own sponser or account
 #SBATCH --mail-type=ALL               	# Mail events
-#SBATCH --mail-user=shoumisarkar@ufl.edu      # Where to send email	
+#SBATCH --mail-user=name@email.com      # Where to send email	
 #SBATCH --ntasks=1                    	# Run on a single machine (node)
-#SBATCH --cpus-per-task 20		  		# Run on a several CPU
-#SBATCH --mem-per-cpu=5gb	            # Memory limit
-#SBATCH --time=24:00:00               	# Time: hrs:min:sec
-#SBATCH --output=ungzip_missing_%j.out   		# Output and error log 
-
+#SBATCH --cpus-per-task 30		  		# Run on a several CPU
+#SBATCH --mem-per-cpu=500mb             # Memory limit
+#SBATCH --time=01:00:00               	# Time: hrs:min:sec
+#SBATCH --output=output_%j.out  	 	# Output and error log 
 pwd; hostname; date 
 
 max_cpus=20

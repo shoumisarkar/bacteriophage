@@ -35,7 +35,7 @@ do
    file2="${file}${sep2}"
    #Commenting this as gzip downloads are already done.
    #echo "Downloading ${file} files..."
-   #lftp -u camda,camdac4md4 sftp://metasub.ethz.ch -e "cd camda2023; get ${file1} -o #/orange/somnath.datta/CAMDA2023/CAMDA_Phages_Forensic/fastq_files_1; get ${file2} -o #/orange/somnath.datta/CAMDA2023/CAMDA_Phages_Forensic/fastq_files_1; get ${file}_2.fastq.gz -o #/path/to/store/fastq_files; quit" 
+   #lftp -u camda,camdac4md4 sftp://metasub.ethz.ch -e "cd camda2023; get ${file1} -o #/path/to/store/fastq_files; get ${file2} -o #/path/to/store/fastq_files; get ${file}_2.fastq.gz -o #/path/to/store/fastq_files; quit" 
  
    ####################################################
    ##  Begins the loop for processing with KneadData ##	

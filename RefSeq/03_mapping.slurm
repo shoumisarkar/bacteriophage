@@ -1,14 +1,14 @@
 #!/bin/bash
 #SBATCH --job-name=KMAmap    # Job name
-#SBATCH --account=group_name			# your own sponser or account
-#SBATCH --qos=group_name                # your own sponser or account
-#SBATCH --mail-type=ALL               	# Mail events
-#SBATCH --mail-user=name@email.com      # Where to send email	
-#SBATCH --ntasks=1                    	# Run on a single machine (node)
-#SBATCH --cpus-per-task 30		  		# Run on a several CPU
-#SBATCH --mem-per-cpu=2gb             	# Memory limit
-#SBATCH --time=01:00:00               	# Time: hrs:min:sec
-#SBATCH --output=output_%j.out   		# Output and error log 
+#SBATCH --account=somnath.datta            # your own sponser or account from this class
+#SBATCH --qos=somnath.datta-b                 # your own sponser or account from this class
+#SBATCH --mail-type=ALL               # Mail events
+#SBATCH --mail-user=sanyasosamuel@ufl.edu          # Where to send email	
+#SBATCH --ntasks=1                    # Run on a single machine (node)
+#SBATCH --cpus-per-task 40		  # Run on a several CPU
+#SBATCH --mem-per-cpu=6gb                    # Memory limit
+#SBATCH --time=48:00:00               # Time: hrs:min:sec
+#SBATCH --output=log_KMA_mapping.out   # Output and error log 
 
 pwd; hostname; date 
 
@@ -18,9 +18,9 @@ module load kma/20230106
 
 # General options
 max_cpus=40
-readPath="/path/to/bbmap_output_files"
-phageDBindex="/path/to/kma_indexing/output"
-output_dir="/path/to/RefSeq/phage/map_results"
+readPath="/orange/somnath.datta/CAMDA2023/CAMDA_Phages_Forensic/bbmap_output_files"
+phageDBindex="/blue/somnath.datta/share/RefSeq/phage/kma_indexing"
+output_dir="/blue/somnath.datta/share/RefSeq/phage/map_results"
 
 separator="_"
 

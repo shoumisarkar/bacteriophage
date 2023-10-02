@@ -7,7 +7,7 @@ rm(list = ls())
 
 library(tidyverse)
 library(metagenomeSeq)
-mapWD <- paste("/path/to/ResFinder/map_results", sep="")
+mapWD <- "/path/to/ResFinder/map_results"
 setwd(mapWD)
 mfiles <- dir()
 
@@ -95,3 +95,7 @@ dat2 <- t(dat2_mat)
 
 # saves preprocessed AMR matrix as .csv file
 write.csv(dat2, file = paste(mapWD, "/AMR_counts_norm.csv", sep=""), row.names = TRUE)
+
+## read the data 
+# read.csv2(paste(mapWD, "/AMR_counts_norm.csv", sep=""), row.names = 1, header = T, sep = ",")
+

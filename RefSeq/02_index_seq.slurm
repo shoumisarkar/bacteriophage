@@ -1,14 +1,14 @@
 #!/bin/bash
 #SBATCH --job-name=KMAindex    # Job name
-#SBATCH --account=biostat-dept            # your own sponser or account from this class
-#SBATCH --qos=biostat-dept                 # your own sponser or account from this class
-#SBATCH --mail-type=ALL               # Mail events
-#SBATCH --mail-user=sanyasosamuel@ufl.edu          # Where to send email	
-#SBATCH --ntasks=1                    # Run on a single machine (node)
-#SBATCH --cpus-per-task 1		  # Run on a several CPU
-#SBATCH --mem-per-cpu=50gb                    # Memory limit
-#SBATCH --time=2:00:00               # Time: hrs:min:sec
-#SBATCH --output=log_KMA_index.out   # Output and error log 
+#SBATCH --account=group_name			# your own sponser or account
+#SBATCH --qos=group_name                # your own sponser or account
+#SBATCH --mail-type=ALL               	# Mail events
+#SBATCH --mail-user=name@email.com      # Where to send email	
+#SBATCH --ntasks=1                    	# Run on a single machine (node)
+#SBATCH --cpus-per-task 30		  		# Run on a several CPU
+#SBATCH --mem-per-cpu=500mb             # Memory limit
+#SBATCH --time=01:00:00               	# Time: hrs:min:sec
+#SBATCH --output=output_%j.out  	 	# Output and error log 
 
 pwd; hostname; date 
 
@@ -17,8 +17,8 @@ module purge
 module load kma/20230106
 
 # General options
-phageDB="/blue/somnath.datta/share/RefSeq/phage"
-output_dir="/blue/somnath.datta/share/RefSeq/phage/kma_indexing"
+phageDB="/path/to/RefSeq/phage/database"
+output_dir="/path/to/RefSeq/kma_indexing/output"
 
 printf "Index the database for the combined sequences of bacteriophages \n"
 

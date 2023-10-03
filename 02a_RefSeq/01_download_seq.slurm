@@ -16,8 +16,6 @@ pwd; hostname; date
 module purge
 module load edirect/12.2
 
-echo "Running Kaiju script for multiple fastq files on several CPU cores" 
-
 # General options
 max_cpus=1
 phageDB="/path/to/download/RefSeq/phage/database/"

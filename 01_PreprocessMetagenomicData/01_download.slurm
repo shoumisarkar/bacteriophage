@@ -15,7 +15,7 @@ dos2unix /path/to/truncated_filenames.txt
 
 for file in $(cat /path/to/truncated_filenames.txt)
 do 
-	
+
    ####################################################	
    ####  download the file from the CAMDA server:  #### 
    ####################################################

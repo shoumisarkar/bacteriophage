@@ -1,3 +1,7 @@
+###############################################################
+## Truncate/format file names, make them easier to read 
+###############################################################
+
 filenames <- read_table2("path/to/all/all_filenames.txt", 
                               col_names = FALSE) #all_filenames.txt contain the names of all .fastq.gz files obtained from the CAMDA server
 

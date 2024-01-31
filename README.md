@@ -7,4 +7,4 @@ Shell and R scripts to reproduce the bioinformatics pre-precessing and statistic
 
 `/03_DownstreamAnalysis` describes the statistical methods implemented in our paper.
 
-`/04_Supplementary` contains additional bioinformatics preprocessing and downstream analyses implemented to obtain the Supplementary Material.
+`/04_Supplementary` contains additional codes for the bioinformatics preprocessing and downstream analyses implemented in the Supplementary Material.

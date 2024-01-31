@@ -6,3 +6,5 @@ Shell and R scripts to reproduce the bioinformatics pre-precessing and statistic
 `/02a_RefSeq and 02b_ResFinder` go over obtaining abundances from the RefSeq and ResFinder databases respectively for bacteriophages and resistomes.
 
 `/03_DownstreamAnalysis` describes the statistical methods implemented in our paper.
+
+`/04_Supplementary` contains additional bioinformatics preprocessing and downstream analyses implemented to obtain the Supplementary Material.

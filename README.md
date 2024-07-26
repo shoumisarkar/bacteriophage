@@ -1,5 +1,5 @@
 # bacteriophage
-Shell, R and Python scripts to reproduce the bioinformatics pre-precessing and statistical analyses described in our paper "Multiblock Partial Least Squares and Rank Aggregation: Applications to Detection of Bacteriophages Associated with Antimicrobial Resistance in the Presence of Potential Confounding Factors" by Shoumi Sarkar, Samuel Anyaso-Samuel, Peihua Qiu and Somnath Datta ([https://doi.org/10.1002/sim.10058](https://doi.org/10.1002/sim.10058)). The programs are organized sequentially in the following folders:
+Shell, R and Python scripts to reproduce the bioinformatics pre-precessing and statistical analyses described in our paper ([https://doi.org/10.1002/sim.10058](https://doi.org/10.1002/sim.10058)) "Multiblock Partial Least Squares and Rank Aggregation: Applications to Detection of Bacteriophages Associated with Antimicrobial Resistance in the Presence of Potential Confounding Factors" by Shoumi Sarkar, Samuel Anyaso-Samuel, Peihua Qiu and Somnath Datta. The programs are organized sequentially in the following folders:
 
 `/01_PreprocessMetagenomicData` outlines steps on handling and preprocessing metagenomic data downloaded from the CAMDA server.
 
